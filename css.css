@@ -1,0 +1,164 @@
+body{
+    background-imge:linear-gradient(to right, rgb(248, 120, 0),white);
+}
+
+.navbar{
+    background-image: linear-gradient(to right, rgb(212, 212, 212), rgb(59, 59, 59));
+    padding: 16px;
+}
+.navbar-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 250px;
+    height: auto;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a:hover{
+    color: red;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.nav-links a:visited{
+    color: red;
+}
+.togel{
+    display: none;
+}
+.tpgel{
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#cihuy{
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: row;
+}
+
+
+#text{
+
+}
+h3{
+    font-size: 30px;
+    margin: 0%
+}
+h1{
+    font-size: 50px;
+    margin: 0%;
+}
+#ror{
+    width: 80%;
+    margin: 100px auto;
+}
+#fitur{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    
+}
+.box img{
+
+}
+.box{
+    width: 25%;
+    border: 1px solid rgb(204, 37, 255);
+    border-radius: 15%;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: -3px -3px 25px rgba(0.0,0,04);
+    
+}
+.box:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+/* nav burger */
+
+
+/* Respo */
+
+@media screen and (max-width: 1000px){
+    .logo img{
+        width: 90px;
+        height: auto;
+    }
+    .togel{
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: white;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0.0,0,0.1)
+    }
+    .togel:focus + .nav-links,.nav-links:hover{
+        display: flex;
+    }
+
+    .nav-links li{
+        margin: 10px 0;
+    }
+    #ror{
+    }
+    #fitur{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    .box{
+        margin: auto;
+        width: 400px;
+        border-radius: 25%;
+
+    }
+    #cihuy{
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        display: flex;
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    h5{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;    
+    }
+    h2{
+        display: none;
+    }
+    .logo img{
+        width: 180px;
+        height: auto;
+}
